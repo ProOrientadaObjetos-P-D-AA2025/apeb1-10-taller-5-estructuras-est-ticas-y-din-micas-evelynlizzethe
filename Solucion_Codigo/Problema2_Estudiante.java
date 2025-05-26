@@ -1,10 +1,10 @@
 
-public class Estudiante {
+public class Problema2_Estudiante {
     private String nombre;
     private int edad;
     private Materia materia;
 
-    public Estudiante(String nombre, int edad) {
+    public Problema2_Estudiante(String nombre, int edad) {
         this.nombre = nombre;
         this.edad = edad;
     }

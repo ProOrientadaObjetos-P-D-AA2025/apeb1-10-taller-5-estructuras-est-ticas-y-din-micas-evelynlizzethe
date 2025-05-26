@@ -1,5 +1,5 @@
 
-public class Persona {
+public class Problema4_Persona {
     
     private String nombre;
     private int edad;
@@ -9,7 +9,7 @@ public class Persona {
     private boolean justicia;
     private double danioEconomico;
 
-    public Persona(String nombre, int edad, String ocupacion, String implicacion, 
+    public Problema4_Persona(String nombre, int edad, String ocupacion, String implicacion, 
             boolean sentencia, boolean justicia, double danioEconomico) {
         this.nombre = nombre;
         this.edad = edad;

@@ -1,13 +1,13 @@
 import java.util.*;
 
-public class CasoCorrupcion {
+public class Problema4_CasoCorrupcion {
     private String nombre;
     private int fechaInicio;
     private String estado;
     private String detalle;
-    private ArrayList<Persona> implicados;
+    private ArrayList<Problema4_Persona> implicados;
 
-    public CasoCorrupcion(String nombre, int fechaInicio, String detalle) {
+    public Problema4_CasoCorrupcion(String nombre, int fechaInicio, String detalle) {
         this.nombre = nombre;
         this.fechaInicio = fechaInicio;
         this.detalle = detalle;
@@ -26,7 +26,7 @@ public class CasoCorrupcion {
             }
         }
     }
-    public void agregarImplicado(Persona p){
+    public void agregarImplicado(Problema4_Persona p){
         implicados.add(p);
     }
     
@@ -40,7 +40,7 @@ public class CasoCorrupcion {
                 + "%s\nDias desde inicio: %d\n--- Implicados ---\n",
                 nombre, estado, detalle, fechaInicio);
         String implicadosTexto = "";
-        for (Persona p : implicados) {
+        for (Problema4_Persona p : implicados) {
             implicadosTexto += String.format("%s\n\n", p.toString());
         }
         return encabezado + implicadosTexto;

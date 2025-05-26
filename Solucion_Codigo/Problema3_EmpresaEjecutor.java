@@ -5,7 +5,7 @@ public class Problema3_EmpresaEjecutor {
 
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        Empresa empresa = new Empresa("Printex", "1102345678000", "Guayaquil");
+        Problema3_Empresa empresa = new Problema3_Empresa("Printex", "1102345678000", "Guayaquil");
 
         System.out.print("Ingrese la cantidad de departamentos: ");
         int num = sc.nextInt();
@@ -20,7 +20,7 @@ public class Problema3_EmpresaEjecutor {
             double produccion = sc.nextDouble();
             sc.nextLine();
 
-            Departamento dep = new Departamento(nombre, empleados, produccion);
+            Problema3_Departamento dep = new Problema3_Departamento(nombre, empleados, produccion);
             empresa.agregarDepartamento(dep);
         }
 

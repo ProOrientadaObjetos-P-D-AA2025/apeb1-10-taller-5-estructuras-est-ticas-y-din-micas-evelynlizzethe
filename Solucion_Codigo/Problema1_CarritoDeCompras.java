@@ -1,16 +1,16 @@
 
 import java.util.ArrayList;
 
-public class CarritoDeCompras {
+public class Problema1_CarritoDeCompras {
 
-    private ArrayList<Producto> producto;
-    private ArrayList<Producto> carritoCompra;
+    private ArrayList<Problema1_Producto> producto;
+    private ArrayList<Problema1_Producto> carritoCompra;
     private ArrayList<Integer> cantidad;
 
     private double descuento;
     private double totalCompra;
 
-    public CarritoDeCompras() {
+    public Problema1_CarritoDeCompras() {
         producto = new ArrayList<>();
         carritoCompra = new ArrayList<>();
         cantidad = new ArrayList<>();
@@ -18,7 +18,7 @@ public class CarritoDeCompras {
         totalCompra = 0;
     }
 
-    public void agregarProductoTienda(Producto pro) {
+    public void agregarProductoTienda(Problema1_Producto pro) {
         producto.add(pro);
     }
 
@@ -27,7 +27,7 @@ public class CarritoDeCompras {
         boolean encontrado = false;
 
         for (int i = 0; i < producto.size(); i++) {
-            Producto pro = producto.get(i);
+            Problema1_Producto pro = producto.get(i);
 
             if (pro.getNombre().equalsIgnoreCase(nombre)) {
                 encontrado = true;
@@ -60,7 +60,7 @@ public class CarritoDeCompras {
         
         if(montoPagado >= totalCompra){
             for (int i = 0; i < carritoCompra.size(); i++) {
-                Producto pro = carritoCompra.get(i);
+                Problema1_Producto pro = carritoCompra.get(i);
                 int cant = cantidad.get(i);
                 pro.reducirCantidad(cant);
                 
@@ -75,7 +75,7 @@ public class CarritoDeCompras {
     public String mostrarDetalleCompra(){
         String detalle = "";
         for (int i = 0; i < carritoCompra.size(); i++) {
-            Producto pro = carritoCompra.get(i);
+            Problema1_Producto pro = carritoCompra.get(i);
             int cant = cantidad.get(i);
             detalle += pro.getNombre() + "- Cantidad: " + cant + "\n";
         }

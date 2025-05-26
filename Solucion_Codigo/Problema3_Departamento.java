@@ -1,12 +1,12 @@
 
-public class Departamento {
+public class Problema3_Departamento {
 
     private String nombre;
     private int numEmpleados;
     private double produccionAnual;
     private String categoria;
 
-    public Departamento(String nombre, int numEmpleados, double produccionAnual) {
+    public Problema3_Departamento(String nombre, int numEmpleados, double produccionAnual) {
         this.nombre = nombre;
         this.numEmpleados = numEmpleados;
         this.produccionAnual = produccionAnual;

@@ -9,7 +9,7 @@ public class Problema2_EstudianteEjecutor {
         System.out.print("Edad del estudiante: ");
         int edad = sc.nextInt();
         
-        Estudiante estudiante = new Estudiante (nombre, edad);
+        Problema2_Estudiante estudiante = new Problema2_Estudiante (nombre, edad);
         sc.nextLine();
         
         System.out.print("Nombre de la materia: ");
@@ -22,7 +22,7 @@ public class Problema2_EstudianteEjecutor {
         double aa = sc.nextDouble();
         sc.nextLine();
         
-        Materia materia = new Materia(nombreMateria, acd, ape, aa);
+        Problema2_Materia materia = new Problema2_Materia(nombreMateria, acd, ape, aa);
         estudiante.asignarMateria(materia);
         
         System.out.println("------------------");

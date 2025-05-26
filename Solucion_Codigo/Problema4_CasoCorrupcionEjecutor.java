@@ -11,7 +11,7 @@ public class Problema4_CasoCorrupcionEjecutor {
         System.out.print("Ingrese detalles del caso: ");
         String detalles = sc.nextLine();
         
-        CasoCorrupcion caso = new CasoCorrupcion(nombreCaso, fechaInicio, detalles);
+        Problema4_CasoCorrupcion caso = new Problema4_CasoCorrupcion(nombreCaso, fechaInicio, detalles);
         
         System.out.print("Ingrese el numero de personas implicadas: ");
         int num = sc.nextInt();
@@ -41,7 +41,7 @@ public class Problema4_CasoCorrupcionEjecutor {
             }
             sc.nextLine();
             
-            Persona persona = new Persona(nombreP, edad, ocupacion, implicacion, sentencia, justicia, danioEconomico);
+            Problema4_Persona persona = new Problema4_Persona(nombreP, edad, ocupacion, implicacion, sentencia, justicia, danioEconomico);
             
             caso.agregarImplicado(persona);
         }

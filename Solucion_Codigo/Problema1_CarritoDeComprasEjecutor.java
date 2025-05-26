@@ -5,11 +5,11 @@ public class Problema1_CarritoDeComprasEjecutor {
 
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        CarritoDeCompras carrito = new CarritoDeCompras();
+        Problema1_CarritoDeCompras carrito = new Problema1_CarritoDeCompras();
 
-        carrito.agregarProductoTienda(new Producto("Laptop", 1169.0, 7));
-        carrito.agregarProductoTienda(new Producto("MousePad", 20.0, 37));
-        carrito.agregarProductoTienda(new Producto("Parlantes", 45.0, 22));
+        carrito.agregarProductoTienda(new Problema1_Producto("Laptop", 1169.0, 7));
+        carrito.agregarProductoTienda(new Problema1_Producto("MousePad", 20.0, 37));
+        carrito.agregarProductoTienda(new Problema1_Producto("Parlantes", 45.0, 22));
 
         System.out.print("Ingrese el nombre del producto que desea adquirir: ");
         String nombre = sc.nextLine();
